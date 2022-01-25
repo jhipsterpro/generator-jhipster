@@ -37,7 +37,7 @@ class <%= dtoClass %>Test {
     @Test
     void dtoEqualsVerifier() throws Exception {
         TestUtil.equalsVerifier(<%= dtoClass %>.class);
-<%_if (!embedded) { _%>
+<%_ if (!embedded) { _%>
         <%= dtoClass %> <%= dtoInstance %>1 = new <%= dtoClass %>();
         <%= dtoInstance %>1.set<%= primaryKey.nameCapitalized %>(<%- id1 %>);
         <%= dtoClass %> <%= dtoInstance %>2 = new <%= dtoClass %>();
