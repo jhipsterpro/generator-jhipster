@@ -377,7 +377,7 @@ module.exports = class JHipsterBaseBlueprintGenerator extends BaseGenerator {
    * Detect if a priority is implemented in the super class but missing in current one.
    * That indicates the blueprint was not updated with the custom priorities.
    * @param {string} priorityName - Priority to be checked.
-   * @param {sring} destPriority - Priority that the task is related to for logging purpose.
+   * @param {string} destPriority - Priority that the task is related to for logging purpose.
    * @return {boolean} true if the priority is missing.
    */
   _isPriorityMissing(priorityName, destPriority = 'related') {
